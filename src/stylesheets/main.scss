@@ -62,7 +62,6 @@ nav > ul >li > a {
 
 img{
     max-width: 300px;
-    width: 50%;
 }
 
 .clearfix::after{
@@ -76,6 +75,7 @@ img{
 }
 .pull-right{
     float: right;
+    border: 1px solid black;
 }
 
 
@@ -161,7 +161,7 @@ button{
     img{
         width: 100%;
     }
-    article {
+    section {
         padding: 0 1rem;
         justify-content: center;
     }
