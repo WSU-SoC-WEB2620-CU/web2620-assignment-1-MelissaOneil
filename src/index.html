@@ -3,14 +3,72 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Project Starter</title>
+  <title>Assignment 1</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./stylesheets/main.scss">
+  <script src="https://kit.fontawesome.com/4cc2350201.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!--  Your HTML goes here-->
-  <h1>Welcome to WEB 2620!!!!!</h1>
+  <header>
+    <div class="header">
+      <h1>My Blog</h1>
+      <form action="#">
+        <input type="search" name="search" id="searchBox" placeholder="Type to search">
+      </form>
+      <div class="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>    
+  </header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Recent posts</a></li>
+        <li><a href="#">Old posts</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">About us</a></li>
+      </ul>
+    </nav>
+  <main class="container">
+    <section class="clearfix">
+      <article>
+        <img class="pull-left" src="./images/Article1.jpg" alt="imgArticle1">
+        <div class="pull-right">
+          <h2>First post with image</h2>
+          <span class="inline-block"><p class="author">By Adam Smith</p> <p>On January 1, 2018</p></span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime rerum consequatur recusandae, consectetur modi fugiat voluptas, quia accusantium qui impedit laudantium obcaecati repellat ipsum corrupti enim! Sapiente quibusdam eos voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptatem quod soluta libero doloremque voluptate fuga explicabo? Ipsum incidunt eius voluptatibus necessitatibus accusamus ducimus esse dicta, commodi beatae. Culpa, ipsa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque nulla quis nostrum non vel quam nisi quibusdam a, cumque culpa eos iure sunt, asperiores distinctio magni. Sapiente nesciunt qui iste.</p>
+          <button class="more-button">Read More</button>
+          <hr>
+      </div>
+      </article>
+      <article>
+        <img class="pull-left" src="./images/Article2.jpg" alt="imgArticle1">
+        <div class="pull-right">
+        <h2>Second post with image</h2>
+        <span class="inline-block"><p class="author">By John Doe</p> <p>On January 1, 2018</p></span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime rerum consequatur recusandae, consectetur modi fugiat voluptas, quia accusantium qui impedit laudantium obcaecati repellat ipsum corrupti enim! Sapiente quibusdam eos voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptatem quod soluta libero doloremque voluptate fuga explicabo? Ipsum incidunt eius voluptatibus necessitatibus accusamus ducimus esse dicta, commodi beatae. Culpa, ipsa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque nulla quis nostrum non vel quam nisi quibusdam a, cumque culpa eos iure sunt, asperiores distinctio magni. Sapiente nesciunt qui iste.</p>
+        <button class="more-button">Read More</button>
+        <hr>
+      </div>
+      </article>
+    </section>
+    <div class="page-nav">
+      <button>Prev</button>
+      <p>1/4</p>
+      <button>Next</button>
+    </div>
+  </main>
+  <footer>
+    <a href="#">Facebook</a>
+    <a href="#">Twitter</a>
+    <a href="#">Google +</a>
+    <span class="copyright">
+      &copy; 2024 All Rights Reserved
+    </span>
+  </footer>
+  
 <script type="module" src="./javascripts/main.js"></script>
 </body>
 </html>

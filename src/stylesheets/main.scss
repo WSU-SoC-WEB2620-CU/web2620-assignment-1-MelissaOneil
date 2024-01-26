@@ -1,1 +1,179 @@
 // Your styles go here
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body {
+    display: flex;
+    background-color: #eff0f2;
+    flex-direction: column;
+    height: 100vh;
+}
+header{
+    font-size: 1.5rem;
+    color: #000;
+    padding: 0 1rem;
+    height: 125px;
+    
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: #000;
+}
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+nav {
+    text-align: center;
+}
+nav > ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    align-items: center;
+    
+}
+nav > ul >li {
+    display: inline-block;
+    font-size: 1.5rem;    
+}
+nav > ul >li:not(:last-child) {
+    padding-right: 10px;
+    border-right: 1px solid #000;
+}
+nav > ul >li > a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+.container {    
+    margin-top: .5px;
+}
+
+img{
+    max-width: 300px;
+    width: 50%;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.pull-left{
+    float: left;
+    margin-right: 10px;
+}
+.pull-right{
+    float: right;
+}
+
+
+nav, footer {
+    background-color: #a9a4d8;
+}
+.page-nav {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+footer {
+    margin: .5rem;
+    padding: 1.5rem;
+    height: 100px;
+    display: flex;
+}
+footer a {
+    padding-right: 10px;
+    text-decoration: none;
+    color: #000;
+}
+footer a:last-of-type{
+    flex-grow: 1;
+}
+button{
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #ccc;
+    padding: 8px;
+    width: 100px;
+}
+#searchBox {
+    border: 1px solid #ccc;
+    border-radius: 20px; 
+    padding: 8px;
+    width: 250px;
+    background-color: #ccc;
+    
+}
+#searchBox:focus {
+    outline: none; 
+    border-color: #007BFF; 
+}
+#searchBox::placeholder {
+    padding-left: 10px;
+    color: #000; 
+}
+.inline-block {
+    display: flex;
+    align-items: center ;
+}
+.author{
+    padding-right: 10px;
+}
+
+@media all and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+    .header{
+        border-bottom: #000 1px solid;
+    }
+    main{
+        flex-direction: row;
+    }
+    footer{
+        flex-direction: row;        
+        justify-content: center;
+    }
+    footer a:last-of-type{
+        flex-grow: 1;
+    }
+    #searchBox {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+    img{
+        width: 100%;
+    }
+    article {
+        padding: 0 1rem;
+        justify-content: center;
+    }
+    footer > a {
+        display: none;
+    }
+    .more-button{
+        display: none;
+    }
+    .page-nav {
+        width: 100%;
+    }
+}
+
+
